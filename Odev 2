@@ -1,0 +1,98 @@
+void SayiTopla(int sayi1, int sayi2) 
+  { 
+      int toplam = sayi1+sayi2; 
+      printf("%d",toplam); 
+  } 
+	
+void SayiCikar(int sayi1 , int sayi2)
+ {
+	int cikarma = sayi1-sayi2;
+	printf("%d",cikarma);
+ }
+
+void SayiCarp(int sayi1 , int sayi2)
+ {
+	int carpma = sayi1*sayi2;
+	printf("%d",carpma);
+ }
+ 
+ void SayiBol(int sayi1 , int sayi2)
+ {
+	int bolme = sayi1/sayi2;
+	printf("%d",bolme);
+ }
+
+int main(){
+
+	int a=0;
+	int b=0;
+	printf("1=toplama, 2=cikarma, 3=carpma, 4=bolme");
+	printf("\n");
+	
+	int toplam=1;
+    int cikarm=2;
+    int carpm=3;
+    int bolm=4;
+
+    int secim=0;
+    printf("islem giriniz:");
+    scanf("%d", &secim);
+	
+		switch(secim){
+		case 1:
+		
+			printf("Birinci sayiyi giriniz:");
+			
+			scanf("%d",&a);
+		
+			printf("İkinci sayiyi giriniz:");
+		
+			scanf("%d",&b);
+            SayiTopla(a,b);
+			break;
+		case 2:
+	
+			printf("Birinci sayiyi giriniz:");
+			
+			scanf("%d",&a);
+		
+			printf("İkinci sayiyi giriniz:");
+		
+			scanf("%d",&b);
+            SayiCikar(a,b);
+			break;
+       
+	   	case 3:
+	
+			printf("Birinci sayiyi giriniz:");
+			
+			scanf("%d",&a);
+		
+			printf("İkinci sayiyi giriniz:");
+		
+			scanf("%d",&b);
+            SayiCarp(a,b);
+			break;
+			
+			
+		case 4:
+	
+			printf("Birinci sayiyi giriniz:");
+			
+			scanf("%d",&a);
+		
+			printf("İkinci sayiyi giriniz:");
+		
+			scanf("%d",&b);
+            SayiBol(a,b);
+			break;
+	   
+	   
+	    default:
+        	printf("Hata!!");
+
+	
+	 return 0;
+}
+         
+}
